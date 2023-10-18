@@ -42,7 +42,7 @@ const Modal = ({
             <div className="flex items-center">
               <h1 className="text-2xl">{user.name}</h1>
               <FontAwesomeIcon icon={faThumbsUp} className="ml-5 " />
-              <span className="text-gray-500 ml-2 text-md text-black">
+              <span className="text-gray-900 ml-2 text-md text-black">
                 {likesCount}
               </span>
             </div>
@@ -64,17 +64,17 @@ const Modal = ({
               <>
                 <a
                   href={socialLinks[0]}
-                  className="mb-4 inline-block mr-4"
+                  className="mb-4 inline-block"
                   target="_blank"
                 >
-                  <FontAwesomeIcon icon={faInstagram} className="fa-2x mr-2" />
+                  <FontAwesomeIcon icon={faInstagram} className="fa-2x mr-4" />
                 </a>
                 <a
                   href={socialLinks[1]}
                   className="mb-4 inline-block"
                   target="_blank"
                 >
-                  <FontAwesomeIcon icon={faTwitter} className="fa-2x mr-2" />
+                  <FontAwesomeIcon icon={faTwitter} className="fa-2x" />
                 </a>
               </>
 

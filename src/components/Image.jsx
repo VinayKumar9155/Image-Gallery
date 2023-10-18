@@ -40,18 +40,18 @@ const Image = (props) => {
   return (
     <>
       <div
-        className="max-w-md rounded overflow-hidden shadow-lg"
+        className="max-w-lg rounded overflow-hidden shadow-lg hover:shadow-2xl"
         onClick={openModal}
       >
         <div>
           <img
-            className="w-full"
+            className="w-full h-40 rounded"
             src={props.data.urls.small}
             alt="Image description"
           />
         </div>
 
-        <div className="px-6 py-4">
+        <div className="px-6 py-2 ">
           <div className="flex items-center mb-2">
             <img
               className="w-10 h-10 rounded-full mr-2"
@@ -61,13 +61,13 @@ const Image = (props) => {
             <p class="text-gray-800 text-sm">{props.data.user.name}</p>
             <div className="px-2 py-1 px-2">
               <FontAwesomeIcon icon={faThumbsUp}/>
-              <span className="text-gray-500 ml-2">{likesCount}</span>
+              <span className="text-gray-800 ml-2">{likesCount}</span>
             </div>
           </div>
 
-          <p className="text-black-700 text-lg italic hover:not-italic font-medium text-center capitalize">
+          {/* <p className="text-black-700 text-lg italic hover:not-italic font-medium text-center capitalize">
             {props.data.alt_description}
-          </p>
+          </p> */}
         </div>
       </div>
 
