@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import { ImageContext } from "../App";
+import React, { useState } from "react";
+// import { ImageContext } from "../App";
 import Modal from "./Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
@@ -21,7 +21,7 @@ const Image = (props) => {
 
   const [modalVisible, setModalVisible] = useState(false);
 
-  const { fetchData, setSearchImage } = useContext(ImageContext);
+  // const { fetchData, setSearchImage } = useContext(ImageContext);
 
   const openModal = () => {
     setModalVisible(true);
