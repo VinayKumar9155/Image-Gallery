@@ -17,21 +17,11 @@ const Image = (props) => {
     ],
   };
   const tags = props.data.tags;
-  // console.log("tags",tags);
-
   const [modalVisible, setModalVisible] = useState(false);
-
-  // const { fetchData, setSearchImage } = useContext(ImageContext);
 
   const openModal = () => {
     setModalVisible(true);
   };
-
-  // const searchByTag = () => {
-  //   setModalVisible(false);
-  //   fetchData(`search/photos?page=1&query=${tags[0][1]}&client_id=9WN2yoVeuTsvYFHqW7msB7CwZ4y-nrri7pc5SaQTMMo`)
-  //   setSearchImage(tags[0][1])
-  // }
 
   const closeModal = () => {
     setModalVisible(false);
