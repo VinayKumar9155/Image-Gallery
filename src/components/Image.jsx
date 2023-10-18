@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { ImageContext } from "../App";
 import Modal from "./Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
@@ -17,21 +16,13 @@ const Image = (props) => {
     ],
   };
   const tags = props.data.tags;
-  // console.log("tags",tags);
 
   const [modalVisible, setModalVisible] = useState(false);
-
-  // const { fetchData, setSearchImage } = useContext(ImageContext);
 
   const openModal = () => {
     setModalVisible(true);
   };
 
-  // const searchByTag = () => {
-  //   setModalVisible(false);
-  //   fetchData(`search/photos?page=1&query=${tags[0][1]}&client_id=9WN2yoVeuTsvYFHqW7msB7CwZ4y-nrri7pc5SaQTMMo`)
-  //   setSearchImage(tags[0][1])
-  // }
 
   const closeModal = () => {
     setModalVisible(false);
@@ -46,7 +37,7 @@ const Image = (props) => {
         <div>
           <img
             className="w-full h-40 rounded"
-            src={props.data.urls.small}
+            src={image}
             alt="Image description"
           />
         </div>
@@ -55,19 +46,15 @@ const Image = (props) => {
           <div className="flex items-center mb-2">
             <img
               className="w-10 h-10 rounded-full mr-2"
-              src={props.data.user.profile_image.large}
+              src={authorImage}
               alt="Author's Image"
             />
-            <p class="text-gray-800 text-sm">{props.data.user.name}</p>
+            <p class="text-gray-1000 text-sm">{user.name}</p>
             <div className="px-2 py-1 px-2">
               <FontAwesomeIcon icon={faThumbsUp}/>
               <span className="text-gray-800 ml-2">{likesCount}</span>
             </div>
           </div>
-
-          {/* <p className="text-black-700 text-lg italic hover:not-italic font-medium text-center capitalize">
-            {props.data.alt_description}
-          </p> */}
         </div>
       </div>
 
