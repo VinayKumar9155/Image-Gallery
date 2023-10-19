@@ -12,9 +12,6 @@ const useAxios = (param) => {
     try {
       setIsLoading(true);
       const res = await axios(url);
-      console.log(res);
-      console.log("size",res.length);
-      console.log("user",res.data.results[0].user.name);
       setResponse(res.data.results);
     } catch(err) {
       setError(err)

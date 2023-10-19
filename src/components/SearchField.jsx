@@ -1,6 +1,6 @@
-
 import React , {useContext, useState} from "react"
 import { ImageContext } from "../App";
+
 const SearchField = () => {
 
     const [serachValue,setSearchValue] = useState('');
@@ -9,7 +9,7 @@ const SearchField = () => {
 
     const handleInputChange = (e)=>{
           setSearchValue(e.target.value);
-         e.preventDefault();
+          e.preventDefault();
     }
 
     const handlebutton = ()=>{

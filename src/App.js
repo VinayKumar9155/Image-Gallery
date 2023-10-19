@@ -14,7 +14,7 @@ function App() {
 
   const [searchImage,setSearchImage] = useState('');
 
-  const {response,isLoading,error,fetchData} = useAxios(`search/photos?page=1&query=dubai&client_id=9WN2yoVeuTsvYFHqW7msB7CwZ4y-nrri7pc5SaQTMMo`)
+  const {response,isLoading,error,fetchData} = useAxios(`search/photos?page=1&query=cars&client_id=9WN2yoVeuTsvYFHqW7msB7CwZ4y-nrri7pc5SaQTMMo`)
   console.log(response);
 
   const value = {
